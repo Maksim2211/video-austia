@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Journey around Cherkasy places</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="page">
+
+    <!-- Navigation -->
+    <header class="nav">
+        <div>
+            <div class="nav-title" data-i18n="nav.title">
+                Journey around Cherkasy
+            </div>
+        </div>
+        <div class="nav-right">
+            <div class="nav-authors" data-i18n="nav.authors">
+                Created by Yan Yanchyshen &amp; Maksym Martynenko
+            </div>
+            <div class="lang-toggle" aria-label="Language switcher">
+                <button class="lang-toggle__button lang-toggle__button--active"
+                        type="button" data-lang="en">
+                    EN
+                </button>
+                <button class="lang-toggle__button" type="button" data-lang="uk">
+                    УКР
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero section -->
+    <section class="hero">
+        <div class="hero-text">
+            <div class="hero-badge">
+                <span class="hero-badge-dot"></span>
+                <span data-i18n="hero.badge">Interactive city mini-guide</span>
+            </div>
+            <h1 class="hero-title" data-i18n="hero.title">
+                Most interesting places in Cherkasy
+            </h1>
+            <p class="hero-subtitle" data-i18n="hero.subtitle">
+                This website is an online wrapper for the presentation
+                “Journey around Cherkasy places”. Here you can calmly reread
+                the stories of each location and see where their names come from.
+            </p>
+            <div class="hero-actions">
+                <a href="#places" class="btn-primary" data-scroll="places">
+                    <span data-i18n="hero.primaryButton">Go to places</span> →
+                </a>
+                <button class="btn-ghost" type="button" id="walk-tip"
+                        data-i18n="hero.secondaryButton">
+                    Tip: open this site on your phone during a walk
+                </button>
+            </div>
+        </div>
+
+        <aside class="hero-side">
+            <div class="hero-side-title" data-i18n="hero.sideTitle">
+                What will you find here?
+            </div>
+            <p class="hero-side-text" data-i18n="hero.sideText">
+                Short descriptions in English and Ukrainian, history of the places
+                and explanations of their names. A small city guide for guests
+                and friends.
+            </p>
+            <div class="hero-pill">
+                <span data-i18n="hero.pill1">City guide</span>
+                <span data-i18n="hero.pill2">Cherkasy</span>
+                <span data-i18n="hero.pill3">History &amp; names</span>
+                <span data-i18n="hero.pill4">Presentation add-on</span>
+            </div>
+        </aside>
+    </section>
+
+    <!-- Places section -->
+    <section class="section" id="places">
+        <div class="section-header">
+            <div class="section-kicker" data-i18n="section.kicker">
+                Cherkasy spots from the presentation
+            </div>
+            <div class="section-title" data-i18n="section.title">
+                Places we talked about
+            </div>
+            <div class="section-subtitle" data-i18n="section.subtitle">
+                Choose a card to read a short story about a place and see
+                where its name comes from.
+            </div>
+        </div>
+
+        <div class="places-grid">
+
+            <!-- 1. 700th Anniversary Square -->
+            <article class="place-card">
+                <h2 class="place-title">
+                    <span data-i18n="place.ploshcha-700.titleMain">
+                        700th Anniversary Square
+                    </span>
+                    <span class="place-subtitle" data-i18n="place.ploshcha-700.titleSub">
+                        Ploshcha 700-richchya Cherkas
+                    </span>
+                </h2>
+                <div class="place-tag">
+                    <span data-i18n="place.ploshcha-700.tag">
+                        Transport hub • Square • Green area
+                    </span>
+                </div>
+                <p class="place-text" data-i18n="place.ploshcha-700.textShort">
+                    An important transport junction and public space of Cherkasy,
+                    created in 1986 where Shevchenko Boulevard meets Sinna Street.
+                    There is a green square officially recognised as a landscape monument.
+                </p>
+                <button class="more-btn" type="button"
+                        data-place="ploshcha-700"
+                        data-i18n="place.ploshcha-700.moreBtn">
+                    More details + photos
+                </button>
+            </article>
+
+            <!-- 2. Embankment -->
+            <article class="place-card">
+                <h2 class="place-title">
+                    <span data-i18n="place.naberezhna.titleMain">
+                        Embankment
+                    </span>
+                    <span class="place-subtitle" data-i18n="place.naberezhna.titleSub">
+                        Naberezhna Street (Embankment)
+                    </span>
+                </h2>
+                <div class="place-tag">
+                    <span data-i18n="place.naberezhna.tag">
+                        Dnipro • Walks • Cafés • Beaches
+                    </span>
+                </div>
+                <p class="place-text" data-i18n="place.naberezhna.textShort">
+                    The Embankment stretches along the Kremenchuk Reservoir
+                    (“Cherkasy Sea”), part of the Dnipro. Once it was an area
+                    for trade and fishing; today it is a favourite place for
+                    walks, green zones, cafés and access to the beaches.
+                </p>
+                <button class="more-btn" type="button"
+                        data-place="naberezhna"
+                        data-i18n="place.naberezhna.moreBtn">
+                    More details + photos
+                </button>
+            </article>
+
+            <!-- 3. Druzhba Narodiv -->
+            <article class="place-card">
+                <h2 class="place-title">
+                    <span data-i18n="place.druzhba-narodiv.titleMain">
+                        Druzhba Narodiv Street
+                    </span>
+                    <span class="place-subtitle" data-i18n="place.druzhba-narodiv.titleSub">
+                        Friendship of Peoples Street
+                    </span>
+                </h2>
+                <div class="place-tag">
+                    <span data-i18n="place.druzhba-narodiv.tag">
+                        Residential area • Soviet period
+                    </span>
+                </div>
+                <p class="place-text" data-i18n="place.druzhba-narodiv.textShort">
+                    A street that connects residential blocks and local
+                    infrastructure: shops, schools and bus stops. Its development
+                    is linked to the expansion of Cherkasy during the Soviet era,
+                    when many apartment buildings were built.
+                </p>
+                <button class="more-btn" type="button"
+                        data-place="druzhba-narodiv"
+                        data-i18n="place.druzhba-narodiv.moreBtn">
+                    More details + photos
+                </button>
+            </article>
+
+            <!-- 4. Soborna Square -->
+            <article class="place-card">
+                <h2 class="place-title">
+                    <span data-i18n="place.soborna-ploshcha.titleMain">
+                        Soborna Square
+                    </span>
+                    <span class="place-subtitle" data-i18n="place.soborna-ploshcha.titleSub">
+                        Soborna Ploshcha (Cathedral Square)
+                    </span>
+                </h2>
+                <div class="place-tag">
+                    <span data-i18n="place.soborna-ploshcha.tag">
+                        Historic centre • Administrative hub
+                    </span>
+                </div>
+                <p class="place-text" data-i18n="place.soborna-ploshcha.textShort">
+                    The historical and political heart of Cherkasy. In the
+                    19th century this was a Market Square with St Nicholas
+                    Cathedral; after World War II the area was rebuilt and for
+                    a long time it was called Lenin Square.
+                </p>
+                <button class="more-btn" type="button"
+                        data-place="soborna-ploshcha"
+                        data-i18n="place.soborna-ploshcha.moreBtn">
+                    More details + photos
+                </button>
+            </article>
+
+            <!-- 5. Rose Valley & Hill of Glory -->
+            <article class="place-card">
+                <h2 class="place-title">
+                    <span data-i18n="place.dolina-pagorb.titleMain">
+                        Rose Valley &amp; Hill of Glory
+                    </span>
+                    <span class="place-subtitle" data-i18n="place.dolina-pagorb.titleSub">
+                        Dolina Troyand &amp; Pagorb Slavy
+                    </span>
+                </h2>
+                <div class="place-tag">
+                    <span data-i18n="place.dolina-pagorb.tag">
+                        Park • Memorial • Dnipro view
+                    </span>
+                </div>
+                <p class="place-text" data-i18n="place.dolina-pagorb.textShort">
+                    One of the key recreational and memorial complexes on the
+                    high bank of the Dnipro. The Hill of Glory is a WWII
+                    memorial, and below it lies Rose Valley – a terraced park
+                    with flowerbeds and recreation zones.
+                </p>
+                <button class="more-btn" type="button"
+                        data-place="dolina-pagorb"
+                        data-i18n="place.dolina-pagorb.moreBtn">
+                    More details + photos
+                </button>
+            </article>
+
+            <!-- 6. Sosnivskyi Park -->
+            <article class="place-card">
+                <h2 class="place-title">
+                    <span data-i18n="place.sosnivskyi-park.titleMain">
+                        Sosnivskyi Park
+                    </span>
+                    <span class="place-subtitle" data-i18n="place.sosnivskyi-park.titleSub">
+                        Sosnivskyi Park (Pine Park)
+                    </span>
+                </h2>
+                <div class="place-tag">
+                    <span data-i18n="place.sosnivskyi-park.tag">
+                        Forest • Walks • Running • Family rest
+                    </span>
+                </div>
+                <p class="place-text" data-i18n="place.sosnivskyi-park.textShort">
+                    One of the largest and oldest park areas of Cherkasy located
+                    in the Sosnivskyi district. It grew out of natural pine
+                    forests around the city and gradually became an official
+                    city park.
+                </p>
+                <button class="more-btn" type="button"
+                        data-place="sosnivskyi-park"
+                        data-i18n="place.sosnivskyi-park.moreBtn">
+                    More details + photos
+                </button>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <span>
+            <span data-i18n="footer.title">Journey around Cherkasy places</span>
+            ·
+            <span class="highlight">Yan Yanchyshen &amp; Maksym Martynenko</span>
+            ·
+            <span data-year></span>
+        </span>
+        <div class="footer-links">
+            <a href="#places" data-i18n="footer.link.places">
+                Back to list of places
+            </a>
+            <a href="mailto:example@example.com" data-i18n="footer.link.email">
+                Email the authors (replace with your email)
+            </a>
+        </div>
+    </footer>
+
+</div>
+
+<!-- Modal for detailed info -->
+<div class="modal-backdrop" data-modal-backdrop>
+    <div class="modal" role="dialog" aria-modal="true">
+        <button class="modal-close" type="button" data-modal-close aria-label="Close">
+            ×
+        </button>
+        <div class="modal-layout">
+            <div class="modal-image-wrap">
+                <img src="" alt="" data-modal-image>
+            </div>
+            <div class="modal-text">
+                <h2 class="modal-title" data-modal-title></h2>
+                <p class="modal-subtitle" data-modal-subtitle></p>
+                <p class="modal-paragraph" data-modal-text-main></p>
+                <p class="modal-paragraph" data-modal-text-extra></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
